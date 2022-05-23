@@ -1,0 +1,92 @@
+/* navbar */
+.nav {
+    margin: 2% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid;
+    border-color: gray;
+    padding: 1%;
+}
+.nav-main{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-img {
+    width: 10%;
+    margin: 0 2%;
+}
+.nav-bar {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end
+}
+.nav-bar-link{
+    text-decoration: none;
+    color: black;
+    padding: 1% 2%;
+}
+
+.main {
+    margin: 2% 8%;
+}
+.page-name {
+    margin: 3% 1%
+}
+.page-title {
+    margin: 2% 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.footer {
+    margin: 5% 5%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-top: 2px solid;
+    border-color: gray;
+}
+
+
+/* impression */
+.impression{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+.impression-output{
+    width: 50%;
+    height: 200px;
+    border: 2px solid;
+    overflow: auto;
+    /* border-radius: 5%; */
+}
+.post {
+    margin: 2% 2%;
+}
+.impression-inputs {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.impression-input {
+    margin: 2% 0;
+    display: flex;
+    flex-direction: column;
+}
+.impression-button {
+    width: 25%;
+}
+
+/* working-hours */
+.wo-time {
+    margin: 0 1%;
+}

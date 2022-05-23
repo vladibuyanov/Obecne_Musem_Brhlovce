@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h4 class="page-name">Recenzie</h4>
+<div class="impression">
+    <div class="impression-output">
+        {% for post in posts %}
+            <div class="post">
+                {{ post.time }}
+                <h6>{{ post.name }} </h6>
+                {{ post.post }}
+            </div>
+        {% endfor %}
+    </div>
+    <div class="impression-inputs">
+        <form method="post">
+            {% csrf_token %}
+            <div class="impression-input">
+                <label for="name">Meno</label>
+                <input type="text" id="name" name='name' placeholder="Meno">
+            </div>
+            <div class="impression-input">
+                <label for="impression">Dojem</label>
+                <textarea id="impression" required name='post' placeholder="Napíšte svoje dojmy"></textarea>
+            </div>
+        <button type="submit" class="impression-button">Poslat'</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
