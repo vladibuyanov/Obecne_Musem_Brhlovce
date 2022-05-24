@@ -1,1 +1,1 @@
-web: gunicorn Brhlovce.wsgi
+web: gunicorn djangoProject.wsgi
