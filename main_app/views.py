@@ -1,7 +1,7 @@
 import datetime
 
 from django.shortcuts import render
-from mainapp.models import UserPosts
+from main_app.models import UserPosts
 
 
 # Create your views here.
