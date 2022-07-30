@@ -37,7 +37,7 @@
     margin: 2% 8%;
 }
 .page-name {
-    margin: 3% 1%
+    margin: 3% 1% 2% 1%;
 }
 .page-title {
     margin: 2% 0;
@@ -59,21 +59,19 @@
 /* impression */
 .impression{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around
+    flex-direction: column;
+    align-items: stretch;
 }
 .impression-output{
-    width: 50%;
     height: 200px;
-    border: 2px solid;
     overflow: auto;
+    /* border: 2px solid; */
     /* border-radius: 5%; */
 }
 .post {
     margin: 2% 2%;
 }
 .impression-inputs {
-    width: 45%;
     display: flex;
     flex-direction: column;
 }
@@ -89,4 +87,11 @@
 /* working-hours */
 .wo-time {
     margin: 0 1%;
+}
+
+/* Photo gallery */
+.photo_gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

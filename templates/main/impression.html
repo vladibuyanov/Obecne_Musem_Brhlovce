@@ -1,17 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h4 class="page-name">Recenzie</h4>
 <div class="impression">
-    <div class="impression-output">
-        {% for post in posts %}
-            <div class="post">
-                {{ post.time }}
-                <h6>{{ post.name }} </h6>
-                {{ post.post }}
-            </div>
-        {% endfor %}
-    </div>
+    <h4 class="page-name">Pridať</h4>
     <div class="impression-inputs">
         <form method="post">
             {% csrf_token %}
@@ -23,8 +14,18 @@
                 <label for="impression">Dojem</label>
                 <textarea id="impression" required name='post' placeholder="Napíšte svoje dojmy"></textarea>
             </div>
-        <button type="submit" class="impression-button">Poslat'</button>
+            <button type="submit" class="impression-button">Poslat'</button>
         </form>
+    </div>
+    <h4 class="page-name">Recenzie</h4>
+    <div class="impression-output">
+        {% for post in posts %}
+        <div class="post">
+            {{ post.time }}
+            <h6>{{ post.name }} </h6>
+            {{ post.post }}
+        </div>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}
