@@ -119,5 +119,5 @@ Control.system-ca-bundle
 GitHub.sublime-settings
 
 /.idea
-/main_app/migrations/
+/app/migrations/
 /TODO.txt

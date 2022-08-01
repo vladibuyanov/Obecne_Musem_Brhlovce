@@ -2,12 +2,13 @@ import datetime
 from django.db import models
 
 
-# Create your models here.
-class UserPosts(models.Model):
+class UserPost(models.Model):
     """
         Model of users post
     """
-    verbose_name = 'User posts'
+    class Meta:
+        verbose_name = 'User Post'
+        verbose_name_plural = 'User Posts'
 
     name = models.CharField(max_length=20, default="Anonim")
     post = models.TextField(null=False)

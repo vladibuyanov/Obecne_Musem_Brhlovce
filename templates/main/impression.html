@@ -6,14 +6,11 @@
     <div class="impression-inputs">
         <form method="post">
             {% csrf_token %}
-            <div class="impression-input">
-                <label for="name">Meno</label>
-                <input type="text" id="name" name='name' placeholder="Meno">
-            </div>
-            <div class="impression-input">
-                <label for="impression">Dojem</label>
-                <textarea id="impression" required name='post' placeholder="Napíšte svoje dojmy"></textarea>
-            </div>
+            {% for fild in form %}
+                <div class="impression-input">
+                  {{ fild }}
+                </div>
+            {% endfor %}
             <button type="submit" class="impression-button">Poslat'</button>
         </form>
     </div>
