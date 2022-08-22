@@ -1,6 +1,4 @@
-# Web page for local museum
-### Municipal Museum in Brhlovce.
-### [Link](https://obecnemuzeumbrhlovce.herokuapp.com/)
+# [Web page for local museum in Brhlovce](https://obecnemuzeumbrhlovce.herokuapp.com/)
 
 ## Tech
 - [Python](#)

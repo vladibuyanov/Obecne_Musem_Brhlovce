@@ -119,5 +119,6 @@ Control.system-ca-bundle
 GitHub.sublime-settings
 
 /.idea
+/.djangoProject
 /app/migrations/
-/TODO.txt
+/TODO.py

@@ -7,7 +7,7 @@
     align-items: center;
     border-bottom: 2px solid;
     border-color: gray;
-    padding: 2% 1% 3% 1%;
+    padding: 2% 0 3% 0;
 }
 .nav-main{
     width: 40%;
@@ -20,7 +20,7 @@
     margin: 0 2%;
 }
 .nav-bar {
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -37,10 +37,10 @@
     margin: 2% 8%;
 }
 .page-name {
-    margin: 3% 1% 2% 1%;
+    margin: 3% 1% 1% 1%;
 }
 .page-title {
-    margin: 2% 0;
+    margin: 2% 1%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -50,30 +50,35 @@
     padding: 2%;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     border-top: 2px solid;
     border-color: gray;
+}
+
+.foo-links {
+    color: #0258a3;
+    text-decoration: none;
+    margin-bottom: 1%;
 }
 
 
 /* impression */
 .impression{
     display: flex;
-    flex-direction: column;
-    align-items: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 .impression-output{
     height: 200px;
     overflow: auto;
-    /* border: 2px solid; */
-    /* border-radius: 5%; */
+    margin: 0 2%;
 }
 .post {
     margin: 2% 2%;
 }
 .impression-inputs {
-    display: flex;
-    flex-direction: column;
+   margin: 0 2%;
 }
 .impression-input {
     margin: 2% 0;
@@ -82,6 +87,9 @@
 }
 .impression-button {
     width: 25%;
+    border: none;
+    background-color: #0258a3;
+    color: #ffffff;
 }
 
 /* working-hours */
@@ -94,4 +102,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.photo_gallery_photos {
+    margin: 2% 10%;
+    border: 15px solid;
+    width: 75%;
 }
