@@ -54,7 +54,6 @@
     border-top: 2px solid;
     border-color: gray;
 }
-
 .foo-links {
     color: #0258a3;
     text-decoration: none;
@@ -105,6 +104,7 @@
 }
 .photo_gallery_photos {
     margin: 2% 10%;
-    border: 15px solid;
+    border: 10px solid;
+    border-color: #0258a3;
     width: 75%;
 }
