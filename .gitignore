@@ -122,3 +122,4 @@ GitHub.sublime-settings
 /.djangoProject
 /app/migrations/
 /TODO.py
+/config.py
