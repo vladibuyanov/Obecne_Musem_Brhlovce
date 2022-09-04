@@ -2,12 +2,12 @@
 .nav {
     margin: 2% 5%;
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid;
     border-color: gray;
-    padding: 2% 0 3% 0;
+    padding: 3% 0;
 }
 .nav-main{
     width: 40%;
@@ -16,23 +16,23 @@
     align-items: center;
 }
 .nav-img {
-    width: 10%;
-    margin: 0 2%;
+    width: 15%;
+    margin: 0 4%;
 }
 .nav-bar {
     width: 60%;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     align-items: center;
-    justify-content: flex-end
+    justify-content: flex-end;
 }
-.nav-bar-link{
+.nav-bar-link {
     text-decoration: none;
     color: black;
     padding: 1% 2%;
 }
 
+/* Main */
 .main {
     margin: 2% 8%;
 }
