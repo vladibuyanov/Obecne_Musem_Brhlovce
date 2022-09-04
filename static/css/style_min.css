@@ -22,3 +22,9 @@
        align-items: normal;
     }
 }
+
+@media screen and (max-width: 450px) {
+    h6 {
+        font-size: 80%;
+    }
+}
