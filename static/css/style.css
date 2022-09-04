@@ -85,7 +85,8 @@
     flex-direction: column;
 }
 .impression-button {
-    width: 25%;
+    width: 100%;
+    border-radius: 4%;
     border: none;
     background-color: #0258a3;
     color: #ffffff;
