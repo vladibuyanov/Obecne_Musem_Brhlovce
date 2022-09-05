@@ -1,10 +1,7 @@
-
 a {
     font-weight: bold;
     font-size: 100%;
 }
-
-
 /* navbar */
 .nav {
     margin: 2% 5%;
@@ -98,12 +95,10 @@ a {
     background-color: #0258a3;
     color: #ffffff;
 }
-
 /* working-hours */
 .wo-time {
     margin: 0 1%;
 }
-
 /* Photo gallery */
 .photo_gallery {
     display: flex;
