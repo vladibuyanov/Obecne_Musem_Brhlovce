@@ -106,8 +106,8 @@ a {
     align-items: center;
 }
 .photo_gallery_photos {
-    margin: 2% 10%;
+    margin: 2% 1%;
     border: 10px solid;
     border-color: #0258a3;
-    width: 75%;
+    width: 98%;
 }
