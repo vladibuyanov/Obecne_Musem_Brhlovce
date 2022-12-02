@@ -13,12 +13,8 @@ main {
     margin: 0 10%;
     flex: 1;
 }
-.page-name {
-    margin: 3% 0 1% 0;
-}
-.page-title {
-    margin: 2% 0;
-}
+.page-name {margin: 3% 0;}
+.page-title {margin: 2% 0;}
 
 /* impression */
 .impression {
@@ -31,12 +27,8 @@ main {
     overflow: auto;
     margin: 0 2%;
 }
-.post {
-    margin: 2% 2%;
-}
-.impression-inputs {
-   margin: 0 2%;
-}
+.post {margin: 2% 2%;}
+.impression-inputs {margin: 0 2%;}
 .impression-input {
     margin: 2% 0;
     display: flex;
@@ -49,10 +41,10 @@ main {
     background-color: #0258a3;
     color: #ffffff;
 }
+
 /* working-hours */
-.wo-time {
-    margin: 0 1%;
-}
+.wo-time {margin: 0 1%;}
+
 /* Photo gallery */
 .photo_gallery {
     display: flex;

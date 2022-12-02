@@ -6,6 +6,7 @@
     top: 0;
     background: white;
 } */
+
 .nav {
     margin: 0 5%;
     display: flex;
@@ -23,7 +24,7 @@
     align-items: center;
 }
 .nav-img {
-    width: 15%;
+    width: 35%;
     margin: 0 4%;
 }
 .nav-bar {
@@ -38,3 +39,4 @@
     color: black;
     padding: 1% 2%;
 }
+.nav-bar-font {font-size: 20px;}

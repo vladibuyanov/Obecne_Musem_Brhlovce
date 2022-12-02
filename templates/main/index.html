@@ -2,29 +2,22 @@
 {% load static %}
 
 {% block content %}
-<h3 class="page-name">Obecné múzeum v Brhlovciach</h3>
+<h3 class="page-name">Vitajte na stránke miestneho múzea obce Brhlovce.</h3>
 <div>
-    <div>
-        <h4 class="section-page-name">Obsah</h4>
-        <div id='sections'>
-            <div class='section'>
-                <img src="{% static 'img/3.jpg' %}" class="d-block w-100" alt="...">
-                <h3 class="section-name">Byt v Brhlovce</h3>
+    <div id='sections'>
+            <div id="byt" class='section'>
+                <h3 class="section-name">Byt v<br>Brhlovce</h3>
             </div>
-            <div class='section'>
-                <img src="{% static 'img/8.jpg' %}" class="d-block w-100" alt="...">
-                <h3 class="section-name">Motocikly</h3>
+            <div id="moto" class='section'>
+                <h3 class="section-name">Staré<br>Motorky</h3>
             </div>
-            <div class='section'>
-                <img src="{% static 'img/3.jpg' %}" class="d-block w-100" alt="...">
-                <h3 class="section-name">Entomologicka zbierka</h3>
+            <div id='zbierka' class='section'>
+                <h3 class="section-name">Entomologicka<br>Zbierka</h3>
             </div>
         </div>
-    </div>
     <div>
-        <h4 class="section-page-name">Vitajte na stránke miestneho múzea obce Brhlovce.</h4>
-        <div id="about_us_text">
-            <h6>Trochu histórie</h6>
+        <h4 class="section-page-name">Trochu histórie</h4>
+        <div class="about_us_text">
             <p>
                 Naše múzeum má svoju históriu.
                 Predtým v budove sídlila základná škola Brhlovchan, ktorá fungovala od 19__ roku do 19__ roku.
@@ -32,7 +25,9 @@
                 Stavbu prevzal Ladislav Kováč, stavebný inžinier z Levíc. Prečítajte si viac o histórii školy
                 <a href="/history">tu</a>.
             </p>
-            <h6>Múzeum</h6>
+        </div>
+        <h4 class="section-page-name">Múzeum</h4>
+        <div class="about_us_text">
             <p>Naša expozícia zahŕňa:</p>
             <ul>
                 <li>Domáce potreby Brhlovchan</li>
@@ -41,6 +36,7 @@
             </ul>
             <h6>Budeme radi, ak nás navštívite</h6>
         </div>
+
     </div>
     <div id='place'>
         <h4 class="section-page-name">Sme tu</h4>
