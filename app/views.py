@@ -5,13 +5,13 @@ from .forms import UserPostForm
 
 
 def index(request):
-    data = {"title": "Obecne muzeum v Brhlovciach"}
+    data = {"title": "Museum in Brhlovce"}
     return render(request, "main/index.html", context=data)
 
 
-def working_hours(request):
-    data = {"title": "Working hours"}
-    return render(request, 'main/working_hours.html', context=data)
+def history(request):
+    data = {"title": "History"}
+    return render(request, 'main/history.html', context=data)
 
 
 def impression(request):

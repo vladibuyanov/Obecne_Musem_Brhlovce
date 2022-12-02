@@ -1,0 +1,40 @@
+/* header */
+/* header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background: white;
+} */
+.nav {
+    margin: 0 5%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 2px solid;
+    border-color: gray;
+    padding: 2% 0;
+}
+.nav-main{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-img {
+    width: 15%;
+    margin: 0 4%;
+}
+.nav-bar {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nav-bar-link {
+    text-decoration: none;
+    color: black;
+    padding: 1% 2%;
+}

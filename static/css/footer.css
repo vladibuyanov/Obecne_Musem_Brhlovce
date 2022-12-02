@@ -1,0 +1,16 @@
+/* footer */
+
+.footer {
+    margin: 5% 5%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid;
+    border-color: gray;
+}
+.foo-links {
+    color: #0258a3;
+    text-decoration: none;
+    margin-bottom: 1%;
+}

@@ -1,4 +1,7 @@
 @media screen and (max-width: 760px) {
+    main {
+        margin: 0 10%;
+    }
     /* Navbar */
     .nav {
         flex-direction: column;

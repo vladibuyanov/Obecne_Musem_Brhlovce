@@ -8,6 +8,6 @@ class UserPostForm(ModelForm):
         fields = ['name', 'post']
 
         widgets = {
-            'name': TextInput(attrs={'placeholder': 'Dojem'}),
+            'name': TextInput(attrs={'placeholder': 'Meno'}),
             'post': Textarea(attrs={'placeholder': 'Napíšte svoje dojmy'})
         }

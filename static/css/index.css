@@ -1,0 +1,27 @@
+/* */
+#about_us_text { margin: 0 2%; }
+
+.section-page-name {
+    margin: 2% 0;
+    padding: 1%;
+    border-bottom: 1px solid;
+}
+
+
+/* */
+#sections {
+    display: flex;
+    flex-direction: row;
+}
+.section { margin: 2% 0; }
+.section-name {
+    color: white;
+    margin-top: -15%;
+    margin-left: 20px;
+}
+
+/* */
+#place {
+    margin: 2% 0;
+}
+#place-info{ font-weight: bold; }
