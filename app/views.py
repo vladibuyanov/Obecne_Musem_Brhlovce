@@ -28,8 +28,3 @@ def impression(request):
             new_post.save()
             return render(request, 'main/impression.html', data)
     return render(request, 'main/impression.html', data)
-
-
-def photo_gallery(request):
-    data = {"title": "Photo gallery"}
-    return render(request, 'main/photo_gallery.html', context=data)

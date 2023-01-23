@@ -6,6 +6,5 @@ urlpatterns = [
     path('', views.index, name='home'),
     path('history', views.history),
     path('impression', views.impression),
-    path('photo_gallery', views.photo_gallery),
     path('admin/', admin.site.urls),
 ]

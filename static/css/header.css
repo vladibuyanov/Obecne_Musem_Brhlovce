@@ -1,19 +1,10 @@
-/* header */
-/* header {
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    background: white;
-} */
-
 .nav {
     margin: 0 5%;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
-    border-bottom: 2px solid;
+    border-bottom: 1px solid;
     border-color: gray;
     padding: 2% 0;
 }
