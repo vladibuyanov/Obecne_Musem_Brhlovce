@@ -5,16 +5,19 @@ from .forms import UserPostForm
 
 
 def index(request):
+    html = "main/index.html"
     data = {"title": "Museum in Brhlovce"}
-    return render(request, "main/index.html", context=data)
+    return render(request, html , context=data)
 
 
 def history(request):
+    html = 'main/history.html'
     data = {"title": "History"}
-    return render(request, 'main/history.html', context=data)
+    return render(request, html, context=data)
 
 
 def impression(request):
+    html = 'main/impression.html'
     posts = UserPost.objects.all()
     form = UserPostForm()
     data = {
@@ -26,5 +29,5 @@ def impression(request):
         new_post = UserPostForm(request.POST)
         if new_post.is_valid():
             new_post.save()
-            return render(request, 'main/impression.html', data)
-    return render(request, 'main/impression.html', data)
+            return render(request, html, data)
+    return render(request, html, data)
