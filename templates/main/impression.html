@@ -2,31 +2,22 @@
 
 {% block content %}
 <div class="impression">
-    <div>
+    <div style="display: flex; align-items: center; justify-content: space-between;">
         <h4 class="page-name">Recenzie</h4>
-        <div class="impression-output">
-            {% for post in posts %}
-            <div class="post">
-                <p>{{ post.name }} | {{ post.time }}</p>
-                <p>{{ post.post }}</p>
-            </div>
-            {% endfor %}
-        </div>
+        <a href="impression/add" style="width: 5%; text-align: center;">
+            <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" style="width: 50%;">
+                <rect x="22.5" y="0" width="5" height="50" fill="#0258a3"/>
+                <rect x="0" y="22.5" width="50" height="5" fill="#0258a3"/>
+            </svg>
+        </a>
     </div>
-    <div>
-        <h4 class="page-name">Pridať recenziu</h4>
-        <div class="impression-inputs">
-            <form method="post">
-                {% csrf_token %}
-                {% for fild in form %}
-                <div class="impression-input">
-                    {{ fild }}
-                </div>
-                {% endfor %}
-            </form>
-            <button type="submit" class="impression-button">Poslat'</button>
+    <div class="impression-output">
+        {% for post in posts %}
+        <div class="post">
+            <p>{{ post.name }} | {{ post.time }}</p>
+            <p>{{ post.post }}</p>
         </div>
-
+        {% endfor %}
     </div>
 </div>
 {% endblock %}

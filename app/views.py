@@ -1,33 +1,43 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
+from .function import add_impression_func
 from .models import UserPost
 from .forms import UserPostForm
 
+template_path = 'main'
+
 
 def index(request):
-    html = "main/index.html"
+    html = f"{template_path}/index.html"
     data = {"title": "Museum in Brhlovce"}
-    return render(request, html , context=data)
+    return render(request, html, context=data)
 
 
 def history(request):
-    html = 'main/history.html'
+    html = f"{template_path}/history.html"
     data = {"title": "History"}
     return render(request, html, context=data)
 
 
 def impression(request):
-    html = 'main/impression.html'
+    html = f"{template_path}/impression.html"
     posts = UserPost.objects.all()
-    form = UserPostForm()
     data = {
         "title": "Impression",
         'posts': posts,
-        'form': form
     }
-    if request.method == "POST":
-        new_post = UserPostForm(request.POST)
-        if new_post.is_valid():
-            new_post.save()
-            return render(request, html, data)
     return render(request, html, data)
+
+
+def add_impression(request):
+    html = f"{template_path}/add_impression.html"
+    if request.method == 'GET':
+        form = UserPostForm()
+        data = {
+            "title": "Add Impression",
+            'form': form
+        }
+        return render(request, html, data)
+    else:
+        add_impression_func(request)
+        return redirect('impression')

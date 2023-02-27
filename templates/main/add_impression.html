@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="add-impression">
+  <h4 class="page-name">Pridať recenziu</h4>
+  <form method="post">
+    {% csrf_token %}
+    {% for fild in form %}
+      {{ fild }}
+    {% endfor %}
+    <button type="submit" class="impression-button">Poslat'</button>
+  </form>
+</div>
+{% endblock %}

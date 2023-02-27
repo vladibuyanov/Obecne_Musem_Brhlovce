@@ -1,4 +1,4 @@
-import datetime
+from django.utils import timezone
 from django.db import models
 
 
@@ -8,7 +8,7 @@ class UserPost(models.Model):
     """
     name = models.CharField(max_length=20, default="Anonim")
     post = models.TextField(null=False)
-    time = models.DateTimeField(default=datetime.datetime.now())
+    time = models.DateTimeField(default=timezone.now)
 
     class Meta:
         verbose_name = 'User Post'

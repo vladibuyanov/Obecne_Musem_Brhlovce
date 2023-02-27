@@ -30,7 +30,14 @@ main {
     margin: 0 2%;
 }
 .post {margin: 2% 2%;}
-.impression-inputs {margin: 0 2%;}
+
+#add-impression form {
+    display: flex;
+    flex-direction: column;
+}
+#id_name {margin-bottom: 2%; border-width: 0 0 1px 0;}
+#id_post {margin-bottom: 2%; border: 0;}
+
 .impression-input {
     margin: 2% 0;
     display: flex;
@@ -38,7 +45,7 @@ main {
 }
 .impression-button {
     width: 100%;
-    border-radius: 4%;
+    border-radius: 10px;
     border: none;
     background-color: #0258a3;
     color: #ffffff;
